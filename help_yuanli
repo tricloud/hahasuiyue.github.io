@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="author" content="" />
+<meta name="description" content="阵防 应用级DDoS防御 高防服务器 高防服务器租用 高防云服务器 防御服务器 服务器防御 游戏高防 棋牌高防 高防游戏服务器 游戏服务器 棋牌服务器 云防护 游戏DDoS防御 应用级DDoS防御 防攻击服务器" />
+<meta name="keywords" content="高防服务器,高防服务器租用,高防云服务器,防御服务器,服务器防御,游戏高防,棋牌高防,高防游戏服务器,游戏服务器,棋牌服务器,云防护,游戏DDoS防御,应用级DDoS防御,防攻击服务器" />
+<title>阵防 - 新一代抗DDoS产品_无视DDoS攻击_隐藏IP_BGP加速_告别传统高防</title>
+<!--[if IE ]>
+        <link rel="stylesheet" type="text/css" href="/static/index/ie.css" />
+        <script src="/static/index/jquery.min.js"></script>
+        <script src="/static/index/ie.js"></script>
+        <script>
+        $(document).ready(function() {
+            $("body").iealert();
+        });
+        </script>
+    <![endif]-->
+<link rel="stylesheet" href="static/index/app.min.css">
+<link rel="stylesheet" href="static/index/amazeui.css">
+<style>
+    .product .col-xs-offset-1{
+        margin-left: 8.3333333333%!important;
+    }
+    </style>
+<script src="static/plugins/jquery/jquery-1.9.1.min.js"></script>
+<script language="javascript" src="static/index/swiper-3.4.0.jquery.min.js"></script>
+</head>
+<body class="">
+<header id="header" class="header header-fixed">
+<div class="container">
+<nav class="navbar" role="navigation">
+
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html">
+<img src="static/index/logo1.png" class="logo-light">
+</a>
+</div>
+
+<div class="collapse navbar-collapse" id="navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="login">登录</a>
+</li>
+<li>
+<a href="register">注册</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right" id="nav">
+<li class=active><a href="index.html">首页</a></li>
+<li><a href="index.html#products" data-click="scroll-to-target">产品特点</a></li>
+<li><a href="index.html#pricing" data-click="scroll-to-target">套餐价格</a></li>
+<li> <a href="help_yuanli">原理介绍</a></li>
+<li> <a href="help_how">使用帮助</a></li>
+<div class="navbar-underline"></div>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<div id="containersss">
+<style>
+    .waves{
+        position: absolute;
+        display: inline-block;
+        top:100px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .menu_list{width:268px;margin:0 auto;}
+
+</style>
+<div class="top-animate-price">
+
+<section class="banner support docs " style="background: url('static/index/helpbg.jpg')fixed no-repeat 50% 53%;background-size: cover;height:300px">
+<div class="search-item">
+<div class="container">
+<h1 class="text-center  title  " style="z-index:1040">帮助中心</h1>
+<a class="btn btn-primary " id="my" data-toggle="modal" data-target=".my" style="display:none">Small modal</a>
+</div>
+</div>
+</section>
+</div>
+<section class="section support docs">
+<div class="container">
+<div class="row">
+<div class="col-xs-3 support-sidebar">
+<ul>
+<li>
+<h3>用户指南</h3>
+<ul>
+<li>
+<p><a href="help_yuanli">产品原理</a></p>
+</li>
+<li>
+<p><a href="help_how">使用帮助</a></p>
+</li>
+<li>
+<p><a href="help_jr">接入方式</a></p>
+</li>
+<li>
+<p><a href="help_win32">Win32应用接入</a></p>
+</li>
+<li>
+<p><a href="help_android">Android应用接入</a></p>
+</li>
+<li>
+<p><a href="help_ios">IOS应用接入</a></p>
+</li>
+<li>
+<p><a href="help_web">Web应用接入</a></p>
+</li>
+<li><a href="help_tg">推广代理</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="col-xs-9">
+<h1 class="support-title text-center">产品原理</h1>
+<div class="support-desc">
+<h3>阵防防护原理</h3>
+<img src="static/index/yuanli.png" />
+<ul><li><p> 左侧是没有使用阵防时服务器的安全状态。直接暴露给攻击者，攻击者直接对服务器进行流量攻击即可完成对服务器的攻击。</p></li>
+<li><p> 右侧是使用阵防防护后的情况，攻击者所有的请求都会进入阵防的虚拟防护节点上，通过每个节点自带的安全防护功能，进行流量清洗过滤，真实的服务器始终在阵防的防护下，避免黑客对其发动攻击。</p>
+<p>&nbsp;</p></li></ul>
+<p><h4>功能特点</h4></p>
+<ul><li>阵防所有的防护节点都是BGP线路，无互联互通问题。且均为独享！！不需要担心被其他客户影响。</li>
+<li>阵防节点之间的调度是由调度中心完成的，秒级调度，在节点被攻击的情况下可以快速进行切换，切换过程用户完全无感知,对业务完全无影响。</li>
+<li>阵防使用集群防护，由数千个高防节点组成分布式防御系统，可以轻松瓦解Tbps级别的大流量攻击。</li>
+<li>由于域名解析是在服务器端完成的，所以可以有效解决客户端环境下的域名劫持问题。</li>
+</ul>
+<p>&nbsp;</p>
+<p><h4>产品优势</h4></p>
+<ul>
+<li>阵防采用多点分布式的防御体系，和传统高防服务器相比，防御效果更好！</li>
+<li>阵防可以隐藏源服务器的IP，可以避免黑客入侵等攻击行为。</li>
+<li>使用阵防后，既可以享受BGP网络的加速效果，又可以拥有超高的DDoS防护能力。</li>
+ </ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="error-item">
+</div>
+<footer class="footer">
+<div class="container footer-content" style="position:relative">
+<div class="bg"></div>
+<div class=" service row">
+<div class="col-xs-4 service-inner wow rubberBand" data-wow-delay="0.2s">
+<div class="col-xs-5 col-xs-offset-1"> <i class="icon-refund"></i></div>
+<div class="col-xs-6"><h3 class="desc">极速退款</h3></div>
+</div>
+<div class="col-xs-4 service-inner wow rubberBand" data-wow-delay="0.4s">
+<div class="col-xs-5 col-xs-offset-1"><i class="icon-service"></i></div>
+<div class="col-xs-6"><h3 class="desc">7X24 小时售后</h3 ></div>
+</div>
+<div class="col-xs-4 service-inner wow rubberBand" data-wow-delay="0.6s">
+<div class="col-xs-5 col-xs-offset-1"><i class="icon-custom-service"></i></div>
+<div class="col-xs-6"><h3 class="desc">1V1 专属客服</h3 ></div>
+</div>
+</div>
+<div class="row footer-item p-t-40 p-b-30">
+<div class="footer-col col-xs-2">
+<div class="footer-col-inner">
+<input type="checkbox" id="product">
+<label for="product"><h3 class="footer-title">产品</h3></label>
+<ul class="list-unstyled">
+<li><a href="index.html#">ArrayNode 阵防</a></li>
+<li><a href="index.html#">系统运维</a></li>
+<li><a href="index.html#">渗透测试</a></li>
+<li><a href="index.html#">数据灾备</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-col col-xs-2">
+<div class="footer-col-inner">
+<input type="checkbox" id="about">
+<label for="about"><h3 class="footer-title">企业</h3></label>
+<ul class="list-unstyled">
+<li><a href="help_yuanli#">关于我们</a></li>
+<li><a href="help_yuanli#">服务条款</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-col col-xs-2">
+<div class="footer-col-inner">
+<input type="checkbox" id="document">
+<label for="document"><h3 class="footer-title">帮助中心</h3></label>
+<ul class="list-unstyled">
+<li><a href="help_yuanli#">用户指南</a></li>
+<li><a href="help_yuanli#">技术指南</a></li>
+<li><a href="help_yuanli#">常见问题</a></li>
+<li><a href="help_yuanli#">备案问题</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-col col-xs-3">
+<div class="footer-col-inner">
+<input type="checkbox" id="contact">
+<label for="contact"><h3 class="footer-title">联系方式</h3></label>
+<ul class="list-unstyled">
+<li><i class="fa fa-1x fa-phone"></i><a href="help_yuanli#">联系电话: 4001000000</a></li>
+<li><i class="fa fa-1x fa-qq"></i><a href="help_yuanli#" target="_blank">客服QQ: 167651763</a></li>
+<li><i class="fa fa-1x fa-envelope-o"></i><a href="help_yuanli#">邮箱: </a></li>
+<li><i class="fa fa-1x fa-location-arrow"></i><a href="help_yuanli#">北京市海淀区中关村软件园</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-col col-xs-3">
+<div class="footer-col-inner">
+<label for="qrcode">
+<h3 class="footer-title">&nbsp;</h3></label>
+<ul class="list-unstyled">
+<li>关注 阵防 最新资讯</li>
+<li><i class="fa fa-weibo fa-lg"></i> <i class="fa fa-wechat fa-lg"></i></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="map hide"></div>
+</div>
+<div class="copyright text-center ">
+<div class="container p-l-70">
+<div class="copyright-item row">
+<div class="col-xs-9 copyright-description text-left">
+
+</div>
+<div class="col-xs-3 info text-left">
+<span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="static/index/app.js"></script>
+<script>
+$(document).ready(function(){
+
+$(".support-sidebar h3:nth-of-type(0)").siblings('ul').show();
+$(".support-sidebar h3").click(function(){
+    $(this).addClass("current").next("ul").slideToggle(300).parents('li').siblings('li').find("ul").slideUp("slow");
+    $(this).parents('li').siblings('li').find('h3').removeClass("current");
+});
+$("#secondpane .menu_body:eq(0)").show();
+$("#secondpane h3.menu_head").mouseover(function(){
+    $(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+    $(this).siblings().removeClass("current");
+});
+});
+</script>
+<script type="text/javascript"  src="http://idm-su.baidu.com/su.js"></script>
+</body>
+</html>

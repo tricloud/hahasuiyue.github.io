@@ -1,0 +1,114 @@
+
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="初云 初云盾 云盾 应用级DDoS防御 高防服务器 高防服务器租用 高防云服务器 防御服务器 服务器防御 游戏高防 棋牌高防 高防游戏服务器 游戏服务器 棋牌服务器 云防护 游戏DDoS防御 应用级DDoS防御 初云盾 防攻击服务器" />
+<meta name="keywords" content="云盾,初云盾,高防服务器,高防服务器租用,高防云服务器,防御服务器,服务器防御,游戏高防,棋牌高防,高防游戏服务器,游戏服务器,棋牌服务器,云防护,游戏DDoS防御,应用级DDoS防御,初云盾,防攻击服务器" />
+<title>云盾 - 新一代抗DDoS产品_无视DDoS攻击_隐藏IP_BGP加速_告别传统高防</title>
+<link rel="stylesheet" href="static/index/app.css">
+</head>
+<body>
+<section class="section auth">
+<div class="auth-bg"></div>
+<div class="logo text-center m-t-55">
+<a href="index.html"><img src="static/index/logo1.png" height="88"></a>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-xs-4 col-xs-offset-4">
+<div class="auth-content">
+<p class="auth-title">注册帐号</p>
+<div class="line m-b-20"></div>
+<form id="register_form" role="form" method="POST" action="register">
+<input type='hidden' name='csrfmiddlewaretoken' value='w6D8BJNibdA1WnpbkbU2f1uUEktDTY4XN1rTN7EG2voqkN4ZdX00Zr2CcW52Zcag' />
+<div class="form-group p-t-5 ">
+<label for="">用户名</label>
+<input type="text" class="form-control" name="username" value="" placeholder="6-20位大小写字母、数字组成">
+</div>
+<div class="form-group p-t-5 ">
+<label for="">邮箱</label>
+<input type="email" class="form-control" name="email" value="" placeholder="请填写有效的邮箱地址">
+</div>
+<div class="form-group p-t-5 ">
+<label for="">手机号 (仅用于接收产品到期提醒，请正确填写)</label>
+<input type="text" class="form-control" name="mobile" value="" placeholder="请输入11位手机号码">
+</div>
+<div class="form-group p-t-5 ">
+<label for="">QQ</label>
+<input type="text" class="form-control" name="qq" value="" placeholder="请输入您的常用qq号码">
+</div>
+<div class="form-group p-t-5 ">
+<label for="">密码</label>
+<input id="password" type="password" class="form-control" name="password" placeholder="6-20位密码">
+</div>
+<div class="form-group">
+<label for="">重复密码</label>
+<input id="confirmpassword" type="password" class="form-control" name="confirmpassword">
+</div>
+<div class="form-group m-b-15" id="back-msg">
+<span class="back-content hidden"></span>
+</div>
+<div class="form-group p-t-15">
+<button type="submit" class="btn btn-primary btn-lg btn-block" id="popup-submit">注册</button>
+</div>
+</form>
+<div class="line m-b-30 m-t-30"></div>
+<a class="btn btn-link btn-lg btn-block" href="login">< 已有账户？立即登录</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div id="popup-captcha"></div>
+<footer>
+<p class="copyright text-center text-white">Copyright © 2010–2016 ChuYun Cloud LLC. All screenshots © their respective owners.</p>
+</footer>
+<script src="static/plugins/jquery/jquery-1.9.1.min.js"></script>
+<script src="static/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="static/js/common.js"></script>
+<script>
+    $(document).ready(function() {
+        //MyValidator
+        var config = {
+            rules : {
+                username : {
+                    required : true
+                },
+                email : {
+                    required : true
+                },
+                password : {
+                    required : true
+                },
+                confirmpassword : {
+                    required : true,
+                    equalTo : "#password"
+                }
+            },
+            messages : {
+                username : {
+                    required : "请输入注册用户名."
+                },
+                email : {
+                    required : "请输入注册邮箱."
+                },
+                password : {
+                    required : "请输入注册密码."
+                },
+                confirmpassword : {
+                    required : "请输入确认密码.",
+                    equalTo: "两次密码输入不一致"
+                }
+            },
+            ajaxSubmit : {
+                url : "/register"
+            }
+        };
+        MyValidator.init($("#register_form"),config);
+    });
+</script>
+<script type="text/javascript"  src="http://idm-su.baidu.com/su.js"></script>
+</body>
+</html>

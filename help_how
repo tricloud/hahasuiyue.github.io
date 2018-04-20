@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">
+<meta name="author" content="" />
+<meta name="description" content="阵防 应用级DDoS防御 高防服务器 高防服务器租用 高防云服务器 防御服务器 服务器防御 游戏高防 棋牌高防 高防游戏服务器 游戏服务器 棋牌服务器 云防护 游戏DDoS防御 应用级DDoS防御 防攻击服务器" />
+<meta name="keywords" content="高防服务器,高防服务器租用,高防云服务器,防御服务器,服务器防御,游戏高防,棋牌高防,高防游戏服务器,游戏服务器,棋牌服务器,云防护,游戏DDoS防御,应用级DDoS防御,防攻击服务器" />
+<title>阵防 - 全新一代抗DDoS产品_无视DDoS攻击_隐藏IP_BGP加速_告别传统高防</title>
+<!--[if IE ]>
+        <link rel="stylesheet" type="text/css" href="/static/index/ie.css" />
+        <script src="/static/index/jquery.min.js"></script>
+        <script src="/static/index/ie.js"></script>
+        <script>
+        $(document).ready(function() {
+            $("body").iealert();
+        });
+        </script>
+    <![endif]-->
+<link rel="stylesheet" href="static/index/app.min.css">
+<link rel="stylesheet" href="static/index/amazeui.css">
+<style>
+    .product .col-xs-offset-1{
+        margin-left: 8.3333333333%!important;
+    }
+    </style>
+<script src="static/plugins/jquery/jquery-1.9.1.min.js"></script>
+<script language="javascript" src="static/index/swiper-3.4.0.jquery.min.js"></script>
+</head>
+<body class="">
+<header id="header" class="header header-fixed">
+<div class="container">
+<nav class="navbar" role="navigation">
+
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="index.html">
+<img src="static/index/logo1.png" class="logo-light">
+</a>
+</div>
+
+<div class="collapse navbar-collapse" id="navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<a href="login">登录</a>
+</li>
+<li>
+<a href="register">注册</a>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right" id="nav">
+<li class=active><a href="index.html">首页</a></li>
+<li><a href="index.html#products" data-click="scroll-to-target">产品特点</a></li>
+<li><a href="index.html#pricing" data-click="scroll-to-target">价格</a></li>
+<li> <a href="help_yuanli">原理介绍</a></li>
+<li> <a href="help_how">使用帮助</a></li>
+<div class="navbar-underline"></div>
+</ul>
+</div>
+</nav>
+</div>
+</header>
+<div id="containersss">
+<style>
+    .waves{
+        position: absolute;
+        display: inline-block;
+        top:100px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .menu_list{width:268px;margin:0 auto;}
+
+</style>
+<div class="top-animate-price">
+
+<section class="banner support docs " style="background: url('static/index/helpbg.jpg')fixed no-repeat 50% 53%;background-size: cover;height:300px">
+<div class="search-item">
+<div class="container">
+<h1 class="text-center  title  " style="z-index:1040">帮助中心</h1>
+<a class="btn btn-primary " id="my" data-toggle="modal" data-target=".my" style="display:none">Small modal</a>
+</div>
+</div>
+</section>
+</div>
+<section class="section support docs">
+<div class="container">
+<div class="row">
+<div class="col-xs-3 support-sidebar">
+<ul>
+<li>
+<h3>用户指南</h3>
+<ul>
+<li>
+<p><a href="help_yuanli">产品原理</a></p>
+</li>
+<li>
+<p><a href="help_how">使用帮助</a></p>
+</li>
+<li>
+<p><a href="help_jr">接入方式</a></p>
+</li>
+<li>
+<p><a href="help_win32">Win32应用接入</a></p>
+</li>
+<li>
+<p><a href="help_android">Android应用接入</a></p>
+</li>
+<li>
+<p><a href="help_ios">IOS应用接入</a></p>
+</li>
+<li>
+<p><a href="help_web">Web应用接入</a></p>
+</li>
+<li><a href="help_tg">推广代理</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="col-xs-9">
+<h1 class="support-title text-center">使用帮助</h1>
+<div class="support-desc">
+<ol>
+<li>
+<p>首先<a href="register"><code>注册</code></a>一个阵防账号，<a href="login"><code>登陆</code></a>进入管理控制台！
+</p>
+</li>
+<li>
+<p>点击左侧菜单<code>阵防应用</code>，点击<code>创建应用</code>
+<img src="static/index/userguide1.png" alt="" /><div class="text-center">图1</div></p>
+</li>
+<li>
+<p>选择防护套餐和购买时长，点击<code>创建应用</code>
+<img src="static/index/userguide2.png" alt="" /><div class="text-center">图2</div></p>
+</li>
+<li>
+<p>在<code>阵防应用</code>页面就可以看到刚才创建的应用，此时应用处于未开通状态，需要充值付费后才能开通
+ <img src="static/index/userguide3.png" alt="" /><div class="text-center">图3</div></p>
+</li>
+<li>
+<p>充值后，在<code>充值付费</code>-<code>我的订单</code>页面可以看到刚才未支付的订单，点击<code>支付</code>
+<img src="static/index/userguide4.png" alt="" /><div class="text-center">图4</div></p>
+</li>
+<li>
+<p>在<code>阵防应用</code>页面可以看到该应用的状态已经变成了<code>正常</code>，然后我们点击<code>配置</code>进入<code>应用管理</code>页面
+<img src="static/index/userguide10.png" alt="" /><div class="text-center">图5</div></p>
+</li>
+<li>
+<p>首先添加<code>源服务器</code>，填写服务器地址和对外提供服务的端口号（即客户端程序需要连接的端口），如下图
+<img src="static/index/userguide5.png" alt="" /><div class="text-center">图6</div></p>
+<p class="text-center"><img src="static/index/userguide7.png" style="width: 60%;" alt="" /><div class="text-center">图7</div></p>
+<p><img src="static/index/userguide11.png" alt="" /><div class="text-center">图7</div></p>
+</li>
+<li>
+<p>然后我们需要修改应用的客户端和服务端配置，把和客户端连接相关的服务器IP修改为对应的虚拟IP，（也就是应用程序不再直接连接你的真实服务器，而是连接虚拟IP）修改完成后在<code>应用管理</code>页面中点击<code>上传应用程序</code>，
+<img src="static/index/userguide6.png" alt="" /><div class="text-center">图8</div></p>
+<p><img src="static/index/userguide8.png" alt="" /><div class="text-center">图9</div></p>
+</li>
+<li>
+<p>等待1分钟左右，等到应用程序的状态变成<code>处理成功</code>，就可以下载该应用了，下载后的程序就自动具备了<code>阵防</code>的防护和加速效果（如果是apk程序需要重新签名）。
+<img src="static/index/userguide9.png" alt="" /><div class="text-center">图10</div></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="error-item">
+</div>
+<footer class="footer">
+<div class="container footer-content" style="position:relative">
+<div class="bg"></div>
+<div class=" service row">
+<div class="col-xs-4 service-inner wow rubberBand" data-wow-delay="0.2s">
+<div class="col-xs-5 col-xs-offset-1"> <i class="icon-refund"></i></div>
+<div class="col-xs-6"><h3 class="desc">极速退款</h3></div>
+</div>
+<div class="col-xs-4 service-inner wow rubberBand" data-wow-delay="0.4s">
+<div class="col-xs-5 col-xs-offset-1"><i class="icon-service"></i></div>
+<div class="col-xs-6"><h3 class="desc">7X24 小时售后</h3 ></div>
+</div>
+<div class="col-xs-4 service-inner wow rubberBand" data-wow-delay="0.6s">
+<div class="col-xs-5 col-xs-offset-1"><i class="icon-custom-service"></i></div>
+<div class="col-xs-6"><h3 class="desc">1V1 专属客服</h3 ></div>
+</div>
+</div>
+<div class="row footer-item p-t-40 p-b-30">
+<div class="footer-col col-xs-2">
+<div class="footer-col-inner">
+<input type="checkbox" id="product">
+<label for="product"><h3 class="footer-title">产品</h3></label>
+<ul class="list-unstyled">
+<li><a href="index.html#">ArrayNode 阵防</a></li>
+<li><a href="index.html#">系统运维</a></li>
+<li><a href="index.html#">渗透测试</a></li>
+<li><a href="index.html#">数据灾备</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-col col-xs-2">
+<div class="footer-col-inner">
+<input type="checkbox" id="about">
+<label for="about"><h3 class="footer-title">企业</h3></label>
+<ul class="list-unstyled">
+<li><a href="help_how#">关于我们</a></li>
+<li><a href="help_how#">服务条款</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-col col-xs-2">
+<div class="footer-col-inner">
+<input type="checkbox" id="document">
+<label for="document"><h3 class="footer-title">帮助中心</h3></label>
+<ul class="list-unstyled">
+<li><a href="help_how#">用户指南</a></li>
+<li><a href="help_how#">技术指南</a></li>
+<li><a href="help_how#">常见问题</a></li>
+<li><a href="help_how#">备案问题</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-col col-xs-3">
+<div class="footer-col-inner">
+<input type="checkbox" id="contact">
+<label for="contact"><h3 class="footer-title">联系方式</h3></label>
+<ul class="list-unstyled">
+<li><i class="fa fa-1x fa-phone"></i><a href="help_how#">联系电话: 4001000000</a></li>
+<li><i class="fa fa-1x fa-qq"></i><a href="help_how#" target="_blank">客服QQ: 167651763</a></li>
+<li><i class="fa fa-1x fa-envelope-o"></i><a href="help_how#">邮箱: </a></li>
+<li><i class="fa fa-1x fa-location-arrow"></i><a href="help_how#">北京市海淀区中关村软件园</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-col col-xs-3">
+<div class="footer-col-inner">
+<label for="qrcode">
+<h3 class="footer-title">&nbsp;</h3></label>
+<ul class="list-unstyled">
+<li>关注 阵防 最新资讯</li>
+<li><i class="fa fa-weibo fa-lg"></i> <i class="fa fa-wechat fa-lg"></i></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="map hide"></div>
+</div>
+<div class="copyright text-center ">
+<div class="container p-l-70">
+<div class="copyright-item row">
+<div class="col-xs-9 copyright-description text-left">
+
+</div>
+<div class="col-xs-3 info text-left">
+<span>
+</span>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="static/index/app.js"></script>
+<script>
+$(document).ready(function(){
+
+$(".support-sidebar h3:nth-of-type(0)").siblings('ul').show();
+$(".support-sidebar h3").click(function(){
+    $(this).addClass("current").next("ul").slideToggle(300).parents('li').siblings('li').find("ul").slideUp("slow");
+    $(this).parents('li').siblings('li').find('h3').removeClass("current");
+});
+$("#secondpane .menu_body:eq(0)").show();
+$("#secondpane h3.menu_head").mouseover(function(){
+    $(this).addClass("current").next("div.menu_body").slideDown(500).siblings("div.menu_body").slideUp("slow");
+    $(this).siblings().removeClass("current");
+});
+});
+</script>
+<script type="text/javascript"  src="http://idm-su.baidu.com/su.js"></script>
+</body>
+</html>
