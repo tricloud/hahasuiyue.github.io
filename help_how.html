@@ -116,9 +116,7 @@
 <li>
 <p><a href="help_ios">IOS应用接入</a></p>
 </li>
-<li>
-<p><a href="help_web">Web应用接入</a></p>
-</li>
+
 <li><a href="help_tg.html">推广代理</a></li>
 </ul>
 </li>
@@ -129,44 +127,64 @@
 <div class="support-desc">
 <ol>
 <li>
-<p>首先<a href="register.html"><code>注册</code></a>一个集群盾账号，<a href="login.html"><code>登陆</code></a>进入管理控制台！
+<p><code>示例appkey和custid分别为"625ad9eae1d9abcb763273ac6d8fe1c6","2"</code>
 </p>
 </li>
 <li>
-<p>点击左侧菜单<code>集群盾应用</code>，点击<code>创建应用</code>
-<img src="static/index/userguide1.png" alt="" /><div class="text-center">图1</div></p>
+<p><code> AAR -> Eclipse Library</code>
+
 </li>
+
+<p>1、将 AAR 文件后缀名改为 ZIP 并解压<br/>
+2、在解压得到的目录里创建一个 libs 文件夹，然后将 classes.jar 文件和 jni 文件夹下的所有文件移到 libs 文件夹下<br/>
+3、在解压得到的目录里创建 project.properties 文件，内容如下：<br/>
+<pre style="margin:15px 0;font:100 12px/18px monaco, andale mono, courier new;padding:10px 12px;border:#ccc 1px solid;border-left-width:4px;background-color:#fefefe;box-shadow:0 0 4px #eee;word-break:break-all;word-wrap:break-word;color:#444"><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span><br><span style="color:#170">target</span>=<span style="color:#170">android-22</span><br><span style="color:#170">android</span>.<span style="color:#170">library</span>=<span style="color:#170">true</span><br><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span></pre>
+target 的值随 AAR 里 Android Manifest.xml 文件的 targetSdkVersion 属性值而定<br/>
+4、删除 armeabi 和 jni 文件夹以及 R.txt 文件<br/>
+5、打开 Eclipse 导入项目并在项目中配置引用这个项目</p>
+
 <li>
-<p>选择防护套餐和购买时长，点击<code>创建应用</code>
-<img src="static/index/userguide2.png" alt="" /><div class="text-center">图2</div></p>
+<p><code> Unity3D</code>
+ 
 </li>
+
+<p>1、拷贝securelib.aar到Plugins/Android目录下<br/>
+
+2、在应用入口函数开头新增以下代码<br/>
+<pre style="margin:15px 0;font:100 12px/18px monaco, andale mono, courier new;padding:10px 12px;border:#ccc 1px solid;border-left-width:4px;background-color:#fefefe;box-shadow:0 0 4px #eee;word-break:break-all;word-wrap:break-word;color:#444"><span style="color:#219">#if</span> <span style="color:#170">UNITY_ANDROID</span> <span style="color:#170">&amp;</span><span style="color:#170">&amp;</span> <span style="color:#708">!UNITY_EDITOR</span><br>    <span style="color:#170">AndroidJavaObject</span> <span style="color:#170">mContext</span>;<br>    <span style="color:#170">using</span> <span style="color:#170">(AndroidJavaClass</span> <span style="color:#170">cls_UnityPlayer</span> = <span style="color:#170">new</span> <span style="color:#170">AndroidJavaClass</span><span style="color:#170">(</span><span style="color:#a11">"com.unity3d.player.UnityPlayer"</span><span style="color:#170">)</span><span style="color:#170">)</span><br>    {<br>        <span style="color:#000">mContext</span> = <span style="color:#164">cls_UnityPlayer</span>.<span style="color:#164">GetStatic</span><span style="color:#164">&lt;AndroidJavaObject</span>&gt;<span style="color:#164">(</span><span style="color:#a11">"currentActivity"</span><span style="color:#164">)</span>; //<span style="color:#164">获</span><span style="color:#164">取Android</span><span style="color:#164">工</span><span style="color:#164">程</span><span style="color:#164">中</span><span style="color:#164">继</span><span style="color:#164">承UnityPlayer</span><span style="color:#164">的</span><span style="color:#164">类</span><span style="color:#164">的</span><span style="color:#164">实</span><span style="color:#164">例</span><br>    }<br>    <span style="color:#170">androidJavaObject</span> = <span style="color:#170">new</span> <span style="color:#170">AndroidJavaObject</span><span style="color:#170">(</span><span style="color:#a11">"priv.securelib.NativeUtils"</span>, <span style="color:#170">mContext</span><span style="color:#170">)</span>;<br>    <span style="color:#170">androidJavaObject</span>.<span style="color:#170">Call</span><span style="color:#170">&lt;bool</span>&gt;<span style="color:#170">(</span><span style="color:#a11">"sinit"</span>, <span style="color:#a11">"提供的appkey"</span>, <span style="color:#a11">"提供的custid"</span><span style="color:#170">)</span>;<br><span style="color:#219">#endif</span></pre>
+
+3、在退出函数开头新增以下代码
+<pre style="margin:15px 0;font:100 12px/18px monaco, andale mono, courier new;padding:10px 12px;border:#ccc 1px solid;border-left-width:4px;background-color:#fefefe;box-shadow:0 0 4px #eee;word-break:break-all;word-wrap:break-word;color:#444"><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span><br><span style="color:#219">#if</span> <span style="color:#170">UNITY_ANDROID</span> <span style="color:#170">&amp;</span><span style="color:#170">&amp;</span> <span style="color:#708">!UNITY_EDITOR</span><br>    <span style="color:#170">androidJavaObject</span>.<span style="color:#170">Call</span><span style="color:#170">&lt;bool</span>&gt;<span style="color:#170">(</span><span style="color:#a11">"sdestroy"</span><span style="color:#170">)</span>;<br><span style="color:#219">#endif</span><br><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span></pre></p>
+
 <li>
-<p>在<code>集群盾应用</code>页面就可以看到刚才创建的应用，此时应用处于未开通状态，需要充值付费后才能开通
- <img src="static/index/userguide3.png" alt="" /><div class="text-center">图3</div></p>
+<p><code>Cocos2dx</code>
 </li>
+
+<p>1、引入securelib.aar<br>
+
+2、在MainActivity（一般是Cocos2dxActivity或者Cocos2dxActivity的派生类）中声明变量<br>
+<pre style="margin:15px 0;font:100 12px/18px monaco, andale mono, courier new;padding:10px 12px;border:#ccc 1px solid;border-left-width:4px;background-color:#fefefe;box-shadow:0 0 4px #eee;word-break:break-all;word-wrap:break-word;color:#444"><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span><br><span style="color:#170">private</span> <span style="color:#170">NativeUtils</span> <span style="color:#170">nativeUtils</span> = <span style="color:#170">new</span> <span style="color:#170">NativeUtils</span><span style="color:#170">(this</span><span style="color:#170">)</span>;//<span style="color:#170">SDK</span><span style="color:#170">类</span><span style="color:#170">声</span><span style="color:#170">明</span><span style="color:#170">&lt;br</span>&gt;<br><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span></pre>
+3、在onCreate函数开头新增以下代码<br>
+<pre style="margin:15px 0;font:100 12px/18px monaco, andale mono, courier new;padding:10px 12px;border:#ccc 1px solid;border-left-width:4px;background-color:#fefefe;box-shadow:0 0 4px #eee;word-break:break-all;word-wrap:break-word;color:#444"><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span><br><span style="color:#170">if</span> <span style="color:#170">(</span><span style="color:#708">!nativeUtils</span>.<span style="color:#170">sinit</span><span style="color:#170">(</span><span style="color:#a11">"提供的appkey"</span>, <span style="color:#a11">"提供的custid"</span><span style="color:#170">)</span><span style="color:#170">)</span> {//<span style="color:#164">SDK</span><span style="color:#164">启</span><span style="color:#164">动</span><span style="color:#164">失</span><span style="color:#164">败</span><br>    <span style="color:#164">Toast</span>.<span style="color:#164">makeText</span><span style="color:#164">(MainActivity</span>.<span style="color:#164">this</span>, <span style="color:#a11">"init false."</span>, <span style="color:#164">Toast</span>.<span style="color:#164">LENGTH_SHORT</span><span style="color:#164">)</span>.<span style="color:#164">show</span><span style="color:#164">(</span><span style="color:#164">)</span>;<br>} <br><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span></pre>
+4、在onDestroy函数返回前新增以下代码<br>
+<pre style="margin:15px 0;font:100 12px/18px monaco, andale mono, courier new;padding:10px 12px;border:#ccc 1px solid;border-left-width:4px;background-color:#fefefe;box-shadow:0 0 4px #eee;word-break:break-all;word-wrap:break-word;color:#444"><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span><br><span style="color:#170">nativeUtils</span>.<span style="color:#170">sdestroy</span><span style="color:#170">(</span><span style="color:#170">)</span>;//<span style="color:#170">SDK</span><span style="color:#170">资</span><span style="color:#170">源</span><span style="color:#170">释</span><span style="color:#170">放</span><br><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span></pre>
+</p>
+
 <li>
-<p>充值后，在<code>充值付费</code>-<code>我的订单</code>页面可以看到刚才未支付的订单，点击<code>支付</code>
-<img src="static/index/userguide4.png" alt="" /><div class="text-center">图4</div></p>
+<p><code>普通Android应用</code>
+</p>
 </li>
-<li>
-<p>在<code>集群盾应用</code>页面可以看到该应用的状态已经变成了<code>正常</code>，然后我们点击<code>配置</code>进入<code>应用管理</code>页面
-<img src="static/index/userguide10.png" alt="" /><div class="text-center">图5</div></p>
-</li>
-<li>
-<p>首先添加<code>源服务器</code>，填写服务器地址和对外提供服务的端口号（即客户端程序需要连接的端口），如下图
-<img src="static/index/userguide5.png" alt="" /><div class="text-center">图6</div></p>
-<p class="text-center"><img src="static/index/userguide7.png" style="width: 60%;" alt="" /><div class="text-center">图7</div></p>
-<p><img src="static/index/userguide11.png" alt="" /><div class="text-center">图7</div></p>
-</li>
-<li>
-<p>然后我们需要修改应用的客户端和服务端配置，把和客户端连接相关的服务器IP修改为对应的虚拟IP，（也就是应用程序不再直接连接你的真实服务器，而是连接虚拟IP）修改完成后在<code>应用管理</code>页面中点击<code>上传应用程序</code>，
-<img src="static/index/userguide6.png" alt="" /><div class="text-center">图8</div></p>
-<p><img src="static/index/userguide8.png" alt="" /><div class="text-center">图9</div></p>
-</li>
-<li>
-<p>等待1分钟左右，等到应用程序的状态变成<code>处理成功</code>，就可以下载该应用了，下载后的程序就自动具备了<code>集群盾</code>的防护和加速效果（如果是apk程序需要重新签名）。
-<img src="static/index/userguide9.png" alt="" /><div class="text-center">图10</div></p>
-</li>
+
+<p>1、引入securelib.aar<br>
+
+2、在MainActivity中声明变量<br>
+<pre style="margin:15px 0;font:100 12px/18px monaco, andale mono, courier new;padding:10px 12px;border:#ccc 1px solid;border-left-width:4px;background-color:#fefefe;box-shadow:0 0 4px #eee;word-break:break-all;word-wrap:break-word;color:#444"><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span><br><span style="color:#170">private</span> <span style="color:#170">NativeUtils</span> <span style="color:#170">nativeUtils</span> = <span style="color:#170">new</span> <span style="color:#170">NativeUtils</span><span style="color:#170">(this</span><span style="color:#170">)</span>;//<span style="color:#170">SDK</span><span style="color:#170">类</span><span style="color:#170">声</span><span style="color:#170">明</span><br><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span></pre>
+3、在onCreate函数开头新增以下代码<br>
+<pre style="margin:15px 0;font:100 12px/18px monaco, andale mono, courier new;padding:10px 12px;border:#ccc 1px solid;border-left-width:4px;background-color:#fefefe;box-shadow:0 0 4px #eee;word-break:break-all;word-wrap:break-word;color:#444"><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span><br><span style="color:#170">if</span> <span style="color:#170">(</span><span style="color:#708">!nativeUtils</span>.<span style="color:#170">sinit</span><span style="color:#170">(</span><span style="color:#a11">"提供的appkey"</span>, <span style="color:#a11">"提供的custid"</span><span style="color:#170">)</span><span style="color:#170">)</span> {//<span style="color:#164">SDK</span><span style="color:#164">启</span><span style="color:#164">动</span><span style="color:#164">失</span><span style="color:#164">败</span><br>    <span style="color:#164">Toast</span>.<span style="color:#164">makeText</span><span style="color:#164">(MainActivity</span>.<span style="color:#164">this</span>, <span style="color:#a11">"init success."</span>, <span style="color:#164">Toast</span>.<span style="color:#164">LENGTH_SHORT</span><span style="color:#164">)</span>.<span style="color:#164">show</span><span style="color:#164">(</span><span style="color:#164">)</span>;<br>}<br><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span></pre>
+4、在onDestroy函数返回前新增以下代码<br>
+<pre style="margin:15px 0;font:100 12px/18px monaco, andale mono, courier new;padding:10px 12px;border:#ccc 1px solid;border-left-width:4px;background-color:#fefefe;box-shadow:0 0 4px #eee;word-break:break-all;word-wrap:break-word;color:#444"><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span><br><span style="color:#170">nativeUtils</span>.<span style="color:#170">sdestroy</span><span style="color:#170">(</span><span style="color:#170">)</span>;//<span style="color:#170">SDK</span><span style="color:#170">资</span><span style="color:#170">源</span><span style="color:#170">释</span><span style="color:#170">放</span><br><span style="color:#170">`</span><span style="color:#170">`</span><span style="color:#170">`</span></pre>
+</p>
+
 </ol>
 </div>
 </div>
