@@ -176,16 +176,15 @@ import priv.securelib.NativeUtils;
   <h2><strong>3. 普通Android应用</strong><strong> </strong></h2>
   <p >接入方式同Cocos2dx。 </p>
   <h1><strong>二、IOS</strong><strong> </strong></h1>
-  <p >1、添加SecureLibForIOS.framework到工程中,假如目录为$(PROJECT_DIR)/sdk <br>
-    2、在应用的Build Phases/Link Binary With Libraries中添加SecureLibForIOS.framework<img src="help_how_wpsFCF0.tmp.jpg" alt="" width="576" height="298" > <br>
+  <p >1、添加SecureMain.framework到工程中,假如目录为$(PROJECT_DIR)/sdk <br>
+    2、在应用的General/Embedded Binaries中添加SecureMain.framework。 <br>
+    <img src="help_how_wps3E22.tmp.jpg" alt="" width="576" height="311" >&nbsp;<br>
     3、在应用的Build Settings/Search Paths/Framework Search Paths中添加$(PROJECT_DIR)/sdk <br>
-    4、在应用的Build Settings/Search Paths/Header Search Paths中添加$(PROJECT_DIR)/sdk/SecureLibForIOS.framework/Headers <br>
-    <img src="help_how_wpsFCF1.tmp.jpg" alt="" width="576" height="273" >&nbsp;<br>
-    5、在应用的General/Embeded Binaries添加SecureLibForIOS.framework <br>
-    <img src="help_how_wpsFCF2.tmp.jpg" alt="" width="576" height="295" >&nbsp;<br>
-    6、修改代码 在应用AppController文件中添加  #import &#60;Secure_Main.h&#62; <br>
-    <img src="help_how_wpsFCF3.tmp.jpg" alt="" width="576" height="336" >&nbsp;</p>
-  <p>&nbsp;</p>
+    4、在应用的Build Settings/Search Paths/Header Search Paths中添加$(PROJECT_DIR)/sdk/SecureMain.framework/Headers <br>
+    <img src="help_how_wps3E23.tmp.jpg" alt="" width="576" height="229" >&nbsp;<br>
+    5、修改代码 在应用AppController文件中添加  #import &#60;SecureMain.h&#62; <br>
+    6、添加secure_init函数调用 <br>
+    <img src="help_how_wps3E24.tmp.jpg" alt="" width="576" height="359" ></p>
 
 </ol>
 </div>
@@ -219,7 +218,7 @@ import priv.securelib.NativeUtils;
 <input type="checkbox" id="product">
 <label for="product"><h3 class="footer-title">产品</h3></label>
 <ul class="list-unstyled">
-<li><a href="index.html#">棋牌盾</a></li>
+<li><a href="index.html#">ArrayNode 棋牌盾</a></li>
 <li><a href="index.html#">系统运维</a></li>
 <li><a href="index.html#">渗透测试</a></li>
 <li><a href="index.html#">数据灾备</a></li>
@@ -266,7 +265,7 @@ import priv.securelib.NativeUtils;
 <h3 class="footer-title">&nbsp;</h3></label>
 <ul class="list-unstyled">
 <li>关注 棋牌盾 最新资讯</li>
-
+<li><i class="fa fa-weibo fa-lg"></i> <i class="fa fa-wechat fa-lg"></i></li>
 </ul>
 </div>
 </div>
