@@ -160,7 +160,7 @@
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="header" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="footer" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="index heading" ></w:LsdException>
-<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  Name="caption" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="caption" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="table of figures" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="envelope address" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="envelope return" ></w:LsdException>
@@ -191,7 +191,7 @@
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Title" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="Closing" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="Signature" ></w:LsdException>
-<w:LsdException Locked="false"  Priority="1"  SemiHidden="false"  Name="Default Paragraph Font" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="1"  SemiHidden="false"  QFormat="true"  Name="Default Paragraph Font" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  UnhideWhenUsed="false"  QFormat="true"  Name="Body Text" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="Body Text Indent" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="List Continue" ></w:LsdException>
@@ -229,7 +229,7 @@
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="HTML Sample" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="HTML Typewriter" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="HTML Variable" ></w:LsdException>
-<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="Normal Table" ></w:LsdException>
+<w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  QFormat="true"  Name="Normal Table" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="0"  SemiHidden="false"  Name="annotation subject" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="No List" ></w:LsdException>
 <w:LsdException Locked="false"  Priority="99"  SemiHidden="false"  Name="1 / a / i" ></w:LsdException>
@@ -800,45 +800,42 @@ font-family:Cambria;
 }
 
 span.15{
-font-family:Consolas;
-color:rgb(96,160,176);
-font-weight:bold;
-font-style:italic;
-font-size:11.0000pt;
+font-family:Cambria;
+color:rgb(79,129,189);
 }
 
 span.16{
-font-family:Consolas;
-color:rgb(102,102,102);
-font-size:11.0000pt;
+font-family:Cambria;
+vertical-align:super;
 }
 
 span.17{
-font-family:Consolas;
-color:rgb(64,112,160);
-font-size:11.0000pt;
+font-family:Cambria;
 }
 
 span.18{
 font-family:Consolas;
-color:rgb(64,160,112);
+color:rgb(0,112,32);
+font-weight:bold;
 font-size:11.0000pt;
 }
 
 span.19{
 font-family:Consolas;
+color:rgb(25,23,124);
 font-size:11.0000pt;
 }
 
 span.20{
 font-family:Consolas;
-color:rgb(0,112,32);
+color:rgb(64,112,160);
 font-size:11.0000pt;
 }
 
 span.21{
 font-family:Consolas;
-color:rgb(64,112,160);
+color:rgb(186,33,33);
+font-style:italic;
 font-size:11.0000pt;
 }
 
@@ -850,7 +847,7 @@ font-size:11.0000pt;
 
 span.23{
 font-family:Consolas;
-color:rgb(188,122,0);
+color:rgb(144,32,0);
 font-size:11.0000pt;
 }
 
@@ -861,33 +858,22 @@ font-size:11.0000pt;
 
 span.25{
 font-family:Consolas;
-color:rgb(64,112,160);
 font-size:11.0000pt;
 }
 
 span.26{
-font-family:Cambria;
+font-family:Consolas;
+color:rgb(64,112,160);
+font-size:11.0000pt;
 }
 
 span.27{
 font-family:Consolas;
+color:rgb(136,0,0);
 font-size:11.0000pt;
 }
 
 span.28{
-font-family:Consolas;
-color:rgb(0,112,32);
-font-weight:bold;
-font-size:11.0000pt;
-}
-
-span.29{
-font-family:Consolas;
-color:rgb(25,23,124);
-font-size:11.0000pt;
-}
-
-span.30{
 font-family:Consolas;
 color:rgb(96,160,176);
 font-weight:bold;
@@ -895,48 +881,69 @@ font-style:italic;
 font-size:11.0000pt;
 }
 
+span.29{
+font-family:Consolas;
+color:rgb(187,102,136);
+font-size:11.0000pt;
+}
+
+span.30{
+font-family:Consolas;
+color:rgb(64,112,160);
+font-size:11.0000pt;
+}
+
 span.31{
-font-family:Consolas;
-color:rgb(125,144,41);
-font-size:11.0000pt;
-}
-
-span.32{
-font-family:Consolas;
-font-size:11.0000pt;
-}
-
-span.33{
 font-family:Consolas;
 color:rgb(0,112,32);
 font-weight:bold;
 font-size:11.0000pt;
 }
 
+span.32{
+font-family:Consolas;
+color:rgb(96,160,176);
+font-weight:bold;
+font-style:italic;
+font-size:11.0000pt;
+}
+
+span.33{
+font-family:Consolas;
+font-size:11.0000pt;
+}
+
+
 span.34{
-font-family:Cambria;
-color:rgb(79,129,189);
+font-family:Consolas;
+color:rgb(64,160,112);
+font-size:11.0000pt;
 }
 
 span.35{
 font-family:Consolas;
+color:rgb(125,144,41);
 font-size:11.0000pt;
 }
 
 span.36{
 font-family:Consolas;
-color:rgb(136,0,0);
+color:rgb(96,160,176);
+font-weight:bold;
+font-style:italic;
 font-size:11.0000pt;
 }
 
 span.37{
 font-family:Consolas;
-color:rgb(144,32,0);
+color:rgb(64,112,160);
 font-size:11.0000pt;
 }
 
 span.38{
-font-family:Cambria;
+font-family:Consolas;
+color:rgb(102,102,102);
+font-size:11.0000pt;
 }
 
 span.39{
@@ -947,30 +954,33 @@ font-size:11.0000pt;
 
 span.40{
 font-family:Consolas;
-color:rgb(186,33,33);
-font-style:italic;
+color:rgb(0,112,32);
 font-size:11.0000pt;
 }
 
 span.41{
 font-family:Consolas;
-color:rgb(96,160,176);
-font-style:italic;
+color:rgb(64,160,112);
 font-size:11.0000pt;
 }
 
 span.42{
 font-family:Consolas;
-color:rgb(64,160,112);
 font-size:11.0000pt;
 }
 
 span.43{
 font-family:Consolas;
+color:rgb(188,122,0);
 font-size:11.0000pt;
 }
 
 span.44{
+font-family:Consolas;
+font-size:11.0000pt;
+}
+
+span.45{
 font-family:Consolas;
 color:rgb(96,160,176);
 font-weight:bold;
@@ -978,43 +988,34 @@ font-style:italic;
 font-size:11.0000pt;
 }
 
-span.45{
-font-family:Cambria;
-vertical-align:super;
-}
-
 span.46{
 font-family:Consolas;
 color:rgb(96,160,176);
-font-weight:bold;
 font-style:italic;
 font-size:11.0000pt;
 }
 
 span.47{
 font-family:Consolas;
-color:rgb(187,102,136);
+color:rgb(255,0,0);
+font-weight:bold;
 font-size:11.0000pt;
 }
 
 span.48{
 font-family:Consolas;
-color:rgb(64,112,160);
+color:rgb(255,0,0);
+font-weight:bold;
 font-size:11.0000pt;
 }
 
 span.49{
 font-family:Consolas;
-color:rgb(255,0,0);
-font-weight:bold;
 font-size:11.0000pt;
 }
 
 span.50{
-font-family:Consolas;
-color:rgb(255,0,0);
-font-weight:bold;
-font-size:11.0000pt;
+font-family:Cambria;
 }
 
 span.51{
@@ -1029,130 +1030,10 @@ span.53{
 font-family:Cambria;
 }
 
-p.54{
-mso-style-name:"Captioned Figure";
-mso-style-parent:Figure;
-margin-bottom:10.0000pt;
-page-break-after:avoid;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-size:12.0000pt;
-}
-
-p.55{
-mso-style-name:"Definition Term";
-mso-style-next:Definition;
-margin-bottom:0.0000pt;
-page-break-after:avoid;
-mso-pagination:lines-together;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-weight:bold;
-font-size:12.0000pt;
-}
-
-p.56{
-mso-style-name:Bibliography;
-margin-bottom:10.0000pt;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-size:12.0000pt;
-}
-
-p.57{
-mso-style-name:Abstract;
-mso-style-next:正文文本;
-margin-top:15.0000pt;
-margin-bottom:15.0000pt;
-page-break-after:avoid;
-mso-pagination:lines-together;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-size:10.0000pt;
-}
-
-p.MsoCaption{
-mso-style-name:题注;
-mso-style-next:正文;
-margin-bottom:6.0000pt;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-style:italic;
-font-size:12.0000pt;
-}
-
-p.59{
-mso-style-name:"Source Code";
-margin-bottom:10.0000pt;
-word-break:break-all;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-size:12.0000pt;
-}
-
-p.60{
-mso-style-name:"Table Caption";
-mso-style-parent:题注;
-margin-bottom:6.0000pt;
-page-break-after:avoid;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-style:italic;
-font-size:12.0000pt;
-}
-
-p.61{
-mso-style-name:"First Paragraph";
-mso-style-parent:正文文本;
-mso-style-next:正文文本;
-margin-top:9.0000pt;
-margin-bottom:9.0000pt;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-size:12.0000pt;
-}
-
-p.62{
-mso-style-name:"TOC Heading";
+p.MsoFootnoteText{
+mso-style-name:脚注文本;
 mso-style-noshow:yes;
-mso-style-parent:"标题 1";
-mso-style-next:正文文本;
-margin-top:12.0000pt;
-margin-bottom:0.0000pt;
-page-break-after:avoid;
-mso-pagination:lines-together;
-line-height:107%;
-font-family:Calibri;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-color:rgb(54,96,145);
-font-weight:normal;
-font-size:16.0000pt;
-}
-
-p.63{
-mso-style-name:"Image Caption";
-mso-style-parent:题注;
-margin-bottom:6.0000pt;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-style:italic;
-font-size:12.0000pt;
-}
-
-p.MsoBodyText{
-mso-style-name:正文文本;
-margin-top:9.0000pt;
-margin-bottom:9.0000pt;
+margin-bottom:10.0000pt;
 font-family:Cambria;
 mso-fareast-font-family:宋体;
 mso-bidi-font-family:'Times New Roman';
@@ -1175,62 +1056,6 @@ font-weight:bold;
 font-size:18.0000pt;
 }
 
-p.66{
-mso-style-name:Compact;
-mso-style-parent:正文文本;
-margin-top:1.8000pt;
-margin-bottom:1.8000pt;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-size:12.0000pt;
-}
-
-p.MsoFootnoteText{
-mso-style-name:脚注文本;
-mso-style-noshow:yes;
-margin-bottom:10.0000pt;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-size:12.0000pt;
-}
-
-p.68{
-mso-style-name:Figure;
-margin-bottom:10.0000pt;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-size:12.0000pt;
-}
-
-p.69{
-mso-style-name:Definition;
-margin-bottom:10.0000pt;
-font-family:Cambria;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-font-size:12.0000pt;
-}
-
-p.MsoSubtitle{
-mso-style-name:副标题;
-mso-style-parent:标题;
-mso-style-next:正文文本;
-margin-top:12.0000pt;
-margin-bottom:12.0000pt;
-page-break-after:avoid;
-mso-pagination:lines-together;
-text-align:center;
-font-family:Calibri;
-mso-fareast-font-family:宋体;
-mso-bidi-font-family:'Times New Roman';
-color:rgb(51,91,138);
-font-weight:bold;
-font-size:15.0000pt;
-}
-
 p.MsoDate{
 mso-style-name:日期;
 mso-style-next:正文文本;
@@ -1238,6 +1063,16 @@ margin-bottom:10.0000pt;
 page-break-after:avoid;
 mso-pagination:lines-together;
 text-align:center;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.MsoBodyText{
+mso-style-name:正文文本;
+margin-top:9.0000pt;
+margin-bottom:9.0000pt;
 font-family:Cambria;
 mso-fareast-font-family:宋体;
 mso-bidi-font-family:'Times New Roman';
@@ -1257,7 +1092,80 @@ mso-bidi-font-family:'Times New Roman';
 font-size:10.0000pt;
 }
 
-p.73{
+p.MsoSubtitle{
+mso-style-name:副标题;
+mso-style-parent:标题;
+mso-style-next:正文文本;
+margin-top:12.0000pt;
+margin-bottom:12.0000pt;
+page-break-after:avoid;
+mso-pagination:lines-together;
+text-align:center;
+font-family:Calibri;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+color:rgb(51,91,138);
+font-weight:bold;
+font-size:15.0000pt;
+}
+
+p.MsoCaption{
+mso-style-name:题注;
+mso-style-next:正文;
+margin-bottom:6.0000pt;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-style:italic;
+font-size:12.0000pt;
+}
+
+p.61{
+mso-style-name:"Captioned Figure";
+mso-style-parent:Figure;
+margin-bottom:10.0000pt;
+page-break-after:avoid;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.62{
+mso-style-name:Definition;
+margin-bottom:10.0000pt;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.63{
+mso-style-name:"Definition Term";
+mso-style-next:Definition;
+margin-bottom:0.0000pt;
+page-break-after:avoid;
+mso-pagination:lines-together;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-weight:bold;
+font-size:12.0000pt;
+}
+
+p.64{
+mso-style-name:"First Paragraph";
+mso-style-parent:正文文本;
+mso-style-next:正文文本;
+margin-top:9.0000pt;
+margin-bottom:9.0000pt;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.65{
 mso-style-name:Author;
 mso-style-next:正文文本;
 margin-bottom:10.0000pt;
@@ -1268,6 +1176,99 @@ font-family:Cambria;
 mso-fareast-font-family:宋体;
 mso-bidi-font-family:'Times New Roman';
 font-size:12.0000pt;
+}
+
+p.66{
+mso-style-name:Compact;
+mso-style-parent:正文文本;
+margin-top:1.8000pt;
+margin-bottom:1.8000pt;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.67{
+mso-style-name:Abstract;
+mso-style-next:正文文本;
+margin-top:15.0000pt;
+margin-bottom:15.0000pt;
+page-break-after:avoid;
+mso-pagination:lines-together;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-size:10.0000pt;
+}
+
+p.68{
+mso-style-name:Figure;
+margin-bottom:10.0000pt;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.69{
+mso-style-name:Bibliography;
+margin-bottom:10.0000pt;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.70{
+mso-style-name:"Table Caption";
+mso-style-parent:题注;
+margin-bottom:6.0000pt;
+page-break-after:avoid;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-style:italic;
+font-size:12.0000pt;
+}
+
+p.71{
+mso-style-name:"Source Code";
+margin-bottom:10.0000pt;
+word-break:break-all;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-size:12.0000pt;
+}
+
+p.72{
+mso-style-name:"Image Caption";
+mso-style-parent:题注;
+margin-bottom:6.0000pt;
+font-family:Cambria;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+font-style:italic;
+font-size:12.0000pt;
+}
+
+p.73{
+mso-style-name:"TOC Heading";
+mso-style-noshow:yes;
+mso-style-parent:"标题 1";
+mso-style-next:正文文本;
+margin-top:12.0000pt;
+margin-bottom:0.0000pt;
+page-break-after:avoid;
+mso-pagination:lines-together;
+line-height:107%;
+font-family:Calibri;
+mso-fareast-font-family:宋体;
+mso-bidi-font-family:'Times New Roman';
+color:rgb(54,96,145);
+font-weight:normal;
+font-size:16.0000pt;
 }
 
 p.74{
@@ -1334,7 +1335,7 @@ margin-left:90.0000pt;
 margin-right:90.0000pt;
 size:612.0000pt 792.0000pt;
 }
-div.Section0{page:Section0;}</style></head><body style="tab-interval:36pt;" ><!--StartFragment--><div class="Section0" ><h1><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><font face="微软雅黑" >一、</font>Android</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h1><p class=MsoBlockText ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >要求应用</font>app必须具有以下两个权限</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoBodyText ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#60;uses-permission&#160;android:name=</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"android.permission.READ_PHONE_STATE"</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;/&#62;&#160;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#60;uses-permission&#160;android:name=</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"android.permission.INTERNET"</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;/&#62;&#160;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><h2><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" >1. 引入库文件</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h2><h3><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" >a.Eclipse</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" ><o:p></o:p></span></b></h3><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo1;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >将</font> AAR 文件后缀名改为 ZIP 并解压</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo1;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >在解压得到的目录里创建一个</font> libs 文件夹，然后将 classes.jar 文件和 jni 下和项目架构相同的文件夹</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:12.0000pt;" >(比如项目用到了armeabi和armeabi-v7a，则只拷贝armeabi和armeabi-v7a，其他的不要动)</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >移到</font> libs 文件夹下</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo1;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >在解压得到的目录里创建</font> project.properties 文件，内容如下：</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=59 ><span class="19"  style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" >target=android-22</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><br></span><span class="19"  style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" >android.library=true</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=61 ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" >target 的值随 AAR 里 Android Manifest.xml 文件的 targetSdkVersion 属性值而定</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo2;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >删除</font> armeabi、armeabi-v7a、arm64-v8a、x86、x86_64文件夹</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo2;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >删除</font>jni 文件夹和R.txt 文件</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo2;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >打开</font> Eclipse 导入项目并在项目中配置引用这个项目</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><h3><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" >b. Android Studio</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" ><o:p></o:p></span></b></h3><p class=61 ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >假设原</font>module名为app，新增的module名为securelib。</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >点击</font> </span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:12.0000pt;" >File &#62; New Module</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >。</font></span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >依次点击</font> </span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:12.0000pt;" >Import .JAR/.AAR Package</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" >&nbsp;<font face="微软雅黑" >和</font> </span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:12.0000pt;" >Next</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >。</font></span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >输入</font> AAR 或 JAR 文件的位置，然后点击 </span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:12.0000pt;" >Finish</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >。</font></span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >4.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" >settings.gradle文件中添加模块。</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=59  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l1 level1 lfo4;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' > <span>&nbsp;</span></span></span><![endif]><span class="19"  style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" >include ':app', ':securelib'</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >5.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >编辑原</font>module的build.gradle文件。</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=59  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l1 level1 lfo4;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' > <span>&nbsp;</span></span></span><![endif]><span class="19"  style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" >implementation fileTree(dir: '../securelib', include: ['*.aar'])</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><h2><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" >2. 代码修改</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h2><h3><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" >a. Cocos2dx</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" ><o:p></o:p></span></b></h3><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo5;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" >import class</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=74  style="margin-top:0.0000pt;margin-bottom:0.0000pt;margin-left:18.0000pt;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><b><span class="53"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >import</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;priv.securelib.NativeUtils;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo5;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >在</font>onCreate函数开头新增以下代码</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//NativeUtils.init()如果返回false表示SDK启动失败</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >if</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;(!NativeUtils.init())&#160;{&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//此处为举例，由开发人员决定失败后的操作</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;Toast.makeText(MainActivity.</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >this</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >,&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"init&#160;false."</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >,&#160;Toast.LENGTH_SHORT).show();</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >}&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo5;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >在</font>onResume函数返回前新增以下代码</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >NativeUtils.reinit();&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><h2><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" >3. 普通Android应用</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h2><p class=61 ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >接入方式同</font>Cocos2dx。</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><h1><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><font face="微软雅黑" >二、</font>IOS</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h1><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >添加</font>SecureMain.framework到工程中,假如目录为$(PROJECT_DIR)/sdk</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >在应用的</font>General/Embedde</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" >d</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" >&nbsp;Binaries</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >中添加</font>SecureMain.framework</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >。</font></span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><img width="864"  height="467"  src="README.files/README1337.png" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >在应用的</font>Build Settings/Search Paths/Framework Search Paths中添加$(PROJECT_DIR)/sdk</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >4.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >在应用的</font>Build Settings/Search Paths/Header Search Paths中添加$(PROJECT_DIR)/sdk/SecureMain.framework/Headers</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><img width="864"  height="344"  src="README.files/README1517.png" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >5.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >修改代码</font> <font face="微软雅黑" >在应用</font>AppController文件中添加 &nbsp;#import &#60;SecureMain.h&#62;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >6.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >添加</font>secure_init函数调用</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><img width="864"  height="538"  src="README.files/README1588.png" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><h1><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><o:p>&nbsp;</o:p></span></b></h1><h1><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><font face="微软雅黑" >三、</font>Windows</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h1><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l2 level1 lfo7;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >添加</font>typedef声明</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >typedef</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(46,139,87);font-weight:bold;font-size:9.0000pt;" >bool</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >(__cdecl&#160;*secure_init_t)();&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l2 level1 lfo7;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >在</font>main函数的开头添加</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//&#160;Get&#160;a&#160;handle&#160;to&#160;the&#160;DLL&#160;module.</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(46,139,87);font-weight:bold;font-size:9.0000pt;" >HINSTANCE</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;hinstLib&#160;=&#160;LoadLibrary(TEXT(</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"SecureMainForWindows.dll"</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >));&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//&#160;If&#160;the&#160;handle&#160;is&#160;valid,&#160;try&#160;to&#160;get&#160;the&#160;function&#160;address.</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >if</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;(hinstLib&#160;!=&#160;NULL)&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >{&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;secure_init_t&#160;secure_int&#160;=&#160;(secure_init_t)GetProcAddress(hinstLib,&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"secure_init"</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >);&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//&#160;If&#160;the&#160;function&#160;address&#160;is&#160;valid,&#160;call&#160;the&#160;function.</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >if</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;(NULL&#160;!=&#160;secure_init)&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;{&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(46,139,87);font-weight:bold;font-size:9.0000pt;" >bool</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;result&#160;=&#160;(secure_init)();&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;std::cout&#160;&#60;&#60;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"result:"</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#60;&#60;&#160;result&#160;&#60;&#60;&#160;std::endl;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;}&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >}&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >else</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >{&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;std::cout&#160;&#60;&#60;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"hinstLib&#160;is&#160;NULL."</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#60;&#60;&#160;std::endl;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >return</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;-1;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >}&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l2 level1 lfo7;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:12.0000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><font face="微软雅黑" >在</font>main函数的结尾添加</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//&#160;Free&#160;the&#160;DLL&#160;module.</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >if</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;(hinstLib&#160;!=&#160;NULL)&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;FreeLibrary(hinstLib);&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p></div><!--EndFragment--></body></html>
+div.Section0{page:Section0;}</style></head><body style="tab-interval:36pt;" ><!--StartFragment--><div class="Section0" ><h1><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><font face="微软雅黑" >一、</font>Android</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h1><p class=MsoBlockText ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >要求应用</font>app必须具有以下两个权限</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoBodyText ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#60;uses-permission&#160;android:name=</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"android.permission.READ_PHONE_STATE"</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;/&#62;&#160;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#60;uses-permission&#160;android:name=</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"android.permission.INTERNET"</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;/&#62;&#160;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p>&nbsp;</o:p></span></p><h2><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" >1. 引入库文件</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h2><h3><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" >a.Eclipse</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" ><o:p></o:p></span></b></h3><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo1;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >将</font> AAR 文件后缀名改为 ZIP 并解压</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo1;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >在解压得到的目录里创建一个</font> libs 文件夹，然后将 classes.jar 文件和 jni 下和项目架构相同的文件夹</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >(比如项目用到了armeabi和armeabi-v7a，则只拷贝armeabi和armeabi-v7a，其他的不要动)</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >移到</font> libs 文件夹下</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo1;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >在解压得到的目录里创建</font> project.properties 文件，内容如下：</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=71 ><span class="42"  style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" >target=android-22</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><br></span><span class="42"  style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" >android.library=true</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=64 ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" >target 的值随 AAR 里 Android Manifest.xml 文件的 targetSdkVersion 属性值而定</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo2;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >删除</font> armeabi、armeabi-v7a、arm64-v8a、x86、x86_64文件夹</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo2;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >删除</font>jni 文件夹和R.txt 文件</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo2;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >打开</font> Eclipse 导入项目并在项目中配置引用这个项目</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><h3><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" >b. Android Studio</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" ><o:p></o:p></span></b></h3><p class=64 ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >假设原</font>module名为app，新增的module名为securelib。</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >点击</font> </span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >File &#62; New Module</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >。</font></span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >依次点击</font> </span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >Import .JAR/.AAR Package</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" >&nbsp;<font face="微软雅黑" >和</font> </span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >Next</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >。</font></span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >输入</font> AAR 或 JAR 文件的位置，然后点击 </span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-weight:bold;font-size:10.5000pt;" >Finish</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >。</font></span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >4.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" >settings.gradle文件中添加模块。</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=71  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l1 level1 lfo4;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' > <span>&nbsp;</span></span></span><![endif]><span class="42"  style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" >include ':app', ':securelib'</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo3;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >5.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >编辑原</font>module的build.gradle文件。</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=71  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l1 level1 lfo4;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' > <span>&nbsp;</span></span></span><![endif]><span class="42"  style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" >implementation fileTree(dir: '../securelib', include: ['*.aar'])</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><h2><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" >2. 代码修改</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h2><h3><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" >a. Cocos2dx</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:14.0000pt;" ><o:p></o:p></span></b></h3><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo5;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" >import class</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=74  style="margin-top:0.0000pt;margin-bottom:0.0000pt;margin-left:18.0000pt;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><b><span class="53"  style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >import</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;priv.securelib.NativeUtils;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo5;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >在</font>onCreate函数开头新增以下代码</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//NativeUtils.init()如果返回false表示SDK启动失败</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >if</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;(!NativeUtils.init())&#160;{&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//此处为举例，由开发人员决定失败后的操作</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;Toast.makeText(MainActivity.</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >this</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >,&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"init&#160;false."</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >,&#160;Toast.LENGTH_SHORT).show();</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >}&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo5;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >在</font>onResume函数返回前新增以下代码</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >NativeUtils.reinit();&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><h2><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" >3. 普通Android应用</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(79,129,189);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h2><p class=64 ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >接入方式同</font>Cocos2dx。</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><h1><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><font face="微软雅黑" >二、</font>IOS</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h1><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >添加</font>SecureMain.framework到工程中,假如目录为$(PROJECT_DIR)/sdk</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >在应用的</font>General/Embedde</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" >d Binaries</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >中添加</font>SecureMain.framework</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >。</font></span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><img width="864"  height="467"  src="README.files/README1337.png" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >在应用的</font>Build Settings/Search Paths/Framework Search Paths中添加$(PROJECT_DIR)/sdk</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >4.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >在应用的</font>Build Settings/Search Paths/Header Search Paths中添加$(PROJECT_DIR)/sdk/SecureMain.framework/Headers</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><img width="864"  height="344"  src="README.files/README1517.png" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >5.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >修改代码</font> <font face="微软雅黑" >在应用</font>AppController文件中添加 &nbsp;#import &#60;SecureMain.h&#62;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l0 level1 lfo6;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >6.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >添加</font>secure_init函数调用</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><img width="864"  height="538"  src="README.files/README1588.png" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><h1><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><o:p>&nbsp;</o:p></span></b></h1><h1><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><font face="微软雅黑" >三、</font>Windows</span></b><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(51,91,138);font-weight:bold;font-size:16.0000pt;" ><o:p></o:p></span></b></h1><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l2 level1 lfo7;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >1.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >添加</font>typedef声明</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >typedef</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(46,139,87);font-weight:bold;font-size:9.0000pt;" >bool</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >(__cdecl&#160;*secure_init_t)();&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l2 level1 lfo7;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >2.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >在</font>main函数的开头添加</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//&#160;Get&#160;a&#160;handle&#160;to&#160;the&#160;DLL&#160;module.</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(46,139,87);font-weight:bold;font-size:9.0000pt;" >HINSTANCE</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;hinstLib&#160;=&#160;LoadLibrary(TEXT(</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"SecureMainForWindows.dll"</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >));&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//&#160;If&#160;the&#160;handle&#160;is&#160;valid,&#160;try&#160;to&#160;get&#160;the&#160;function&#160;address.</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >if</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;(hinstLib&#160;!=&#160;NULL)&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >{&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;secure_init_t&#160;secure_int&#160;=&#160;(secure_init_t)GetProcAddress(hinstLib,&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"secure_init"</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >);&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//&#160;If&#160;the&#160;function&#160;address&#160;is&#160;valid,&#160;call&#160;the&#160;function.</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >if</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;(NULL&#160;!=&#160;secure_init)&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;{&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(46,139,87);font-weight:bold;font-size:9.0000pt;" >bool</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;result&#160;=&#160;(secure_init)();&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;std::cout&#160;&#60;&#60;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"result:"</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#60;&#60;&#160;result&#160;&#60;&#60;&#160;std::endl;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;}&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >}&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >else</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >{&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;std::cout&#160;&#60;&#60;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,255);font-size:9.0000pt;" >"hinstLib&#160;is&#160;NULL."</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#60;&#60;&#160;std::endl;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;</span><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >return</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;-1;&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >}&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;text-indent:-24.0000pt;mso-list:l2 level1 lfo7;" ><![if !supportLists]><span style="font-family:微软雅黑;font-size:10.5000pt;" ><span style='mso-list:Ignore;' >3.<span>&nbsp;</span></span></span><![endif]><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><font face="微软雅黑" >在</font>main函数的结尾添加</span><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:10.5000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-left:24.0000pt;" ><span style="mso-spacerun:'yes';font-family:微软雅黑;font-size:12.0000pt;" ><o:p>&nbsp;</o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,130,0);font-size:9.0000pt;" >//&#160;Free&#160;the&#160;DLL&#160;module.</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(248,248,248);" ><b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,102,153);font-weight:bold;font-size:9.0000pt;" >if</span></b><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;(hinstLib&#160;!=&#160;NULL)&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p><p class=MsoNormal  style="margin-bottom:5.0000pt;margin-left:18.0000pt;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;border-left:2.2500pt solid rgb(108,226,108);mso-border-left-alt:2.2500pt solid rgb(108,226,108);padding:0pt 0pt 0pt 0pt ;mso-line-height-alt:12pt;background:rgb(255,255,255);" ><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(0,0,0);font-size:9.0000pt;" >&#160;&#160;&#160;&#160;FreeLibrary(hinstLib);&#160;&#160;</span><span style="mso-spacerun:'yes';font-family:微软雅黑;color:rgb(92,92,92);font-size:9.0000pt;" ><o:p></o:p></span></p></div><!--EndFragment--></body></html>
 <ol>
 
   <h1>&nbsp;</h1>
